@@ -1,0 +1,225 @@
+2015-09-15 17:10:05,037: INFO: MainThread: Logging in.
+2015-09-15 17:10:17,818: INFO: MainThread: Logging in.
+2015-09-15 17:10:23,870: INFO: MainThread: Logged in.
+2015-09-15 17:10:23,872: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:10:29,174: INFO: message_sender: Now serving customer 1, ('send', 89, 'Hello')
+2015-09-15 17:12:14,887: INFO: MainThread: Logging in.
+2015-09-15 17:12:20,570: INFO: MainThread: Logged in.
+2015-09-15 17:12:20,572: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:13:08,954: INFO: MainThread: Logging in.
+2015-09-15 17:13:14,470: INFO: MainThread: Logged in.
+2015-09-15 17:13:14,471: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:13:26,621: INFO: message_sender: Now serving customer 1, ('send', 89, ':3958641 0.30550042292')
+2015-09-15 17:23:26,952: INFO: MainThread: Logging in.
+2015-09-15 17:23:29,941: INFO: MainThread: Logging in.
+2015-09-15 17:23:34,784: INFO: MainThread: Logged in.
+2015-09-15 17:23:34,786: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:25:59,136: INFO: MainThread: Logging in.
+2015-09-15 17:26:42,583: INFO: MainThread: Logging in.
+2015-09-15 17:26:50,709: INFO: MainThread: Logging in.
+2015-09-15 17:26:57,904: INFO: MainThread: Logged in.
+2015-09-15 17:26:57,906: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:27:02,463: INFO: message_sender: Now serving customer 1, ('send', 89, '\tHello')
+2015-09-15 17:28:50,957: INFO: MainThread: Logging in.
+2015-09-15 17:28:56,541: INFO: MainThread: Logged in.
+2015-09-15 17:28:56,543: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:29:01,331: INFO: message_sender: Now serving customer 1, ('send', 721, 'Hello')
+2015-09-15 17:29:22,119: INFO: MainThread: Logging in.
+2015-09-15 17:29:27,752: INFO: MainThread: Logged in.
+2015-09-15 17:29:27,754: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 17:30:09,500: INFO: MainThread: Logging in.
+2015-09-15 17:30:14,157: INFO: MainThread: Logged in.
+2015-09-15 17:30:14,159: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 21:29:10,724: INFO: MainThread: Logging in.
+2015-09-15 21:29:17,393: INFO: MainThread: Logged in.
+2015-09-15 21:29:17,407: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 21:30:19,982: INFO: MainThread: Logging in.
+2015-09-15 21:30:24,492: INFO: MainThread: Logged in.
+2015-09-15 21:30:24,494: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 21:30:44,228: INFO: message_sender: Now serving customer 1, ('send', 89, 'Comon spam')
+2015-09-15 21:31:22,740: INFO: MainThread: Logging in.
+2015-09-15 21:31:27,309: INFO: MainThread: Logged in.
+2015-09-15 21:31:27,311: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 21:31:31,838: INFO: message_sender: Now serving customer 1, ('send', 89, 'Phew')
+2015-09-15 21:32:01,621: INFO: MainThread: Logging in.
+2015-09-15 21:32:06,410: INFO: MainThread: Logged in.
+2015-09-15 21:32:06,412: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 21:35:10,279: INFO: message_sender: Now serving customer 1, ('send', 89, 'comon spam')
+2015-09-15 21:35:29,083: INFO: message_sender: Now serving customer 2, ('send', 89, 'See?')
+2015-09-15 21:35:34,476: INFO: message_sender: Now serving customer 3, ('send', 89, "When I want spam I don't get it")
+2015-09-15 21:35:59,262: INFO: message_sender: Now serving customer 4, ('send', 89, "When I don't want it there's a spam attack")
+2015-09-15 22:14:49,585: INFO: MainThread: Logging in.
+2015-09-15 22:14:55,917: INFO: MainThread: Logged in.
+2015-09-15 22:14:55,919: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:17:04,939: INFO: MainThread: Logging in.
+2015-09-15 22:17:13,060: INFO: MainThread: Logged in.
+2015-09-15 22:17:13,060: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:38:07,447: INFO: MainThread: Logging in.
+2015-09-15 22:38:13,489: INFO: MainThread: Logged in.
+2015-09-15 22:38:13,490: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:40:45,083: INFO: MainThread: Logging in.
+2015-09-15 22:40:51,897: INFO: MainThread: Logged in.
+2015-09-15 22:40:51,898: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:41:37,702: INFO: MainThread: Logging in.
+2015-09-15 22:41:48,103: INFO: MainThread: Logged in.
+2015-09-15 22:41:48,105: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:42:15,973: INFO: MainThread: Logging in.
+2015-09-15 22:42:20,849: INFO: MainThread: Logged in.
+2015-09-15 22:42:20,851: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:43:08,512: INFO: MainThread: Logging in.
+2015-09-15 22:43:13,318: INFO: MainThread: Logged in.
+2015-09-15 22:43:13,319: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:43:40,614: INFO: MainThread: Logging in.
+2015-09-15 22:43:45,602: INFO: MainThread: Logged in.
+2015-09-15 22:43:45,607: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:44:06,623: INFO: MainThread: Logging in.
+2015-09-15 22:44:15,704: INFO: MainThread: Logged in.
+2015-09-15 22:44:15,705: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:44:41,346: INFO: MainThread: Logging in.
+2015-09-15 22:44:47,277: INFO: MainThread: Logged in.
+2015-09-15 22:44:47,277: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:45:26,414: INFO: message_sender: Now serving customer 1, ('send', 89, u':8417751 @UnitedStatesOfAmerica <i>brews coffee for @UnitedStatesOfAmerica</i>')
+2015-09-15 22:47:00,114: INFO: MainThread: Logging in.
+2015-09-15 22:47:06,070: INFO: MainThread: Logged in.
+2015-09-15 22:47:06,071: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:47:18,455: INFO: message_sender: Now serving customer 1, ('send', 89, u':None @UnitedStatesOfAmerica <i>brews coffee for @UnitedStatesOfAmerica</i>')
+2015-09-15 22:47:42,462: INFO: MainThread: Logging in.
+2015-09-15 22:47:47,174: INFO: MainThread: Logged in.
+2015-09-15 22:47:47,190: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:48:20,303: INFO: MainThread: Logging in.
+2015-09-15 22:48:26,216: INFO: MainThread: Logged in.
+2015-09-15 22:48:26,218: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:48:31,598: INFO: message_sender: Now serving customer 1, ('send', 89, u':8417820 @UnitedStatesOfAmerica <i>brews coffee for @UnitedStatesOfAmerica</i>')
+2015-09-15 22:48:38,345: INFO: message_sender: Now serving customer 2, ('send', 89, ':8417823 ')
+2015-09-15 22:49:59,161: INFO: message_sender: Now serving customer 3, ('send', 89, u':8417845 @UnitedStatesOfAmerica -1')
+2015-09-15 22:53:55,042: INFO: MainThread: Logging in.
+2015-09-15 22:54:00,551: INFO: MainThread: Logged in.
+2015-09-15 22:54:00,563: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:54:05,978: INFO: message_sender: Now serving customer 1, ('send', 89, u':8417960 @UnitedStatesOfAmerica<i>brewscoffeefor@UnitedStatesOfAmerica</i>')
+2015-09-15 22:54:56,155: INFO: MainThread: Logging in.
+2015-09-15 22:55:03,913: INFO: MainThread: Logged in.
+2015-09-15 22:55:03,915: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:55:32,803: INFO: message_sender: Now serving customer 1, ('send', 89, u':8418028 @UnitedStatesOfAmerica<i>brewscoffeefor@UnitedStatesOfAmerica</i>')
+2015-09-15 22:56:27,399: INFO: MainThread: Logging in.
+2015-09-15 22:56:32,515: INFO: MainThread: Logged in.
+2015-09-15 22:56:32,517: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:56:44,596: INFO: message_sender: Now serving customer 1, ('send', 89, u':8418092 @UnitedStatesOfAmerica <i>brews coffee for @UnitedStatesOfAmerica</i>')
+2015-09-15 22:57:17,223: INFO: MainThread: Logging in.
+2015-09-15 22:57:21,807: INFO: MainThread: Logged in.
+2015-09-15 22:57:21,809: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:57:30,597: INFO: message_sender: Now serving customer 1, ('send', 89, u':8418141 @UnitedStatesOfAmerica <i>brews coffee for @UnitedStatesOfAmerica</i>')
+2015-09-15 22:59:17,672: INFO: MainThread: Logging in.
+2015-09-15 22:59:22,307: INFO: MainThread: Logged in.
+2015-09-15 22:59:22,309: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 22:59:37,663: INFO: message_sender: Now serving customer 1, ('send', 89, u':3960105 @DragonLordtheFiery I&#39;m <a href="https://github.com/Charcoal-SE/SmokeDetector" rel="nofollow">SmokeDetector</a>, a bot that detects spam and low-quality posts on the network and posts alerts to chat. <a href="https://github.com/Charcoal-SE/SmokeDetector/wiki/Commands" rel="nofollow">A command list is available here</a>.')
+2015-09-15 23:00:04,697: INFO: message_sender: Now serving customer 2, ('send', 89, ':3960123 ')
+2015-09-15 23:01:01,418: INFO: MainThread: Logging in.
+2015-09-15 23:01:06,810: INFO: MainThread: Logged in.
+2015-09-15 23:01:06,811: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:03:03,328: INFO: message_sender: Now serving customer 1, ('send', 89, u':3960185 @DragonLordtheFiery Running since 15:00:11 UTC (2 minutes)')
+2015-09-15 23:03:37,090: INFO: message_sender: Now serving customer 2, ('send', 89, u':3960198 @DragonLordtheFiery Running since 15:00:11 UTC (2 minutes)')
+2015-09-15 23:05:48,737: INFO: message_sender: Now serving customer 3, ('send', 89, u":3960261 <div class='full'>1. [:3960232] &lt;skipped&gt; <br> 2. [:3960225] &lt;skipped&gt; <br> 3. [:3960216] That message is not a report.</div>")
+2015-09-15 23:08:57,087: INFO: MainThread: Logging in.
+2015-09-15 23:09:01,695: INFO: MainThread: Logged in.
+2015-09-15 23:09:01,697: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:18:03,502: INFO: MainThread: Logging in.
+2015-09-15 23:18:09,031: INFO: MainThread: Logged in.
+2015-09-15 23:18:09,035: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:20:28,231: INFO: MainThread: Logging in.
+2015-09-15 23:20:33,186: INFO: MainThread: Logged in.
+2015-09-15 23:20:33,187: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:20:57,457: INFO: MainThread: Logging in.
+2015-09-15 23:21:02,443: INFO: MainThread: Logged in.
+2015-09-15 23:21:02,449: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:21:21,708: INFO: message_sender: Now serving customer 1, ('send', 89, ":3960417 I haven't seen anything from @Smokey yet -- Hold on!")
+2015-09-15 23:22:08,423: INFO: MainThread: Logging in.
+2015-09-15 23:22:18,101: INFO: MainThread: Logged in.
+2015-09-15 23:22:18,105: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:22:37,880: INFO: message_sender: Now serving customer 1, ('send', 89, ":3960436 I haven't seen anything from @Smokey yet -- Hold on!")
+2015-09-15 23:22:43,287: INFO: message_sender: Now serving customer 2, ('send', 89, ":3960437 I haven't seen anything from @Smokey yet -- Hold on!")
+2015-09-15 23:27:42,724: INFO: message_sender: Now serving customer 3, ('send', 89, ":3960516 I haven't seen anything from @Smokey yet -- Hold on!")
+2015-09-15 23:27:48,121: INFO: message_sender: Now serving customer 4, ('send', 89, ":3960517 I haven't seen anything from @Smokey yet -- Hold on!")
+2015-09-15 23:32:03,304: INFO: MainThread: Logging in.
+2015-09-15 23:32:09,545: INFO: MainThread: Logged in.
+2015-09-15 23:32:09,547: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:33:06,616: INFO: MainThread: Logging in.
+2015-09-15 23:33:11,636: INFO: MainThread: Logged in.
+2015-09-15 23:33:11,652: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:34:20,995: INFO: message_sender: Now serving customer 1, ('send', 89, '\x1b[A')
+2015-09-15 23:34:24,244: INFO: MainThread: Logging in.
+2015-09-15 23:34:29,495: INFO: MainThread: Logged in.
+2015-09-15 23:34:29,502: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:35:55,197: INFO: MainThread: Logging in.
+2015-09-15 23:36:01,176: INFO: MainThread: Logged in.
+2015-09-15 23:36:01,178: INFO: message_sender: Worker thread reporting for duty.
+2015-09-15 23:36:20,557: INFO: message_sender: Now serving customer 1, ('send', 89, ":3960605 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-15 23:36:25,949: INFO: message_sender: Now serving customer 2, ('send', 89, ":3960606 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-15 23:38:39,132: INFO: message_sender: Now serving customer 3, ('send', 89, ":3960644 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-15 23:38:46,801: INFO: message_sender: Now serving customer 4, ('send', 89, ":3960645 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:12:22,465: INFO: message_sender: Now serving customer 5, ('send', 89, ":3961059 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:12:27,857: INFO: message_sender: Now serving customer 6, ('send', 89, ":3961061 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:16:23,544: INFO: MainThread: Logging in.
+2015-09-16 00:16:29,686: INFO: MainThread: Logged in.
+2015-09-16 00:16:29,687: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:17:18,775: INFO: message_sender: Now serving customer 1, ('send', 89, ":3961144 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:17:24,149: INFO: message_sender: Now serving customer 2, ('send', 89, ":3961145 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:18:43,165: INFO: MainThread: Logging in.
+2015-09-16 00:18:47,612: INFO: MainThread: Logged in.
+2015-09-16 00:18:47,613: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:25:26,655: INFO: message_sender: Now serving customer 1, ('send', 89, ":3961294 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:25:32,055: INFO: message_sender: Now serving customer 2, ('send', 89, ":3961296 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:33:41,688: INFO: message_sender: Now serving customer 3, ('send', 89, ":3961294 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:33:47,101: INFO: message_sender: Now serving customer 4, ('send', 89, ":3961296 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:37:45,502: INFO: message_sender: Now serving customer 5, ('send', 89, ":3961526 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:37:47,990: INFO: MainThread: Logging in.
+2015-09-16 00:37:53,387: INFO: MainThread: Logged in.
+2015-09-16 00:37:53,388: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:38:59,746: INFO: message_sender: Now serving customer 1, ('send', 89, ":3961549 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:40:59,290: INFO: MainThread: Logging in.
+2015-09-16 00:41:09,327: INFO: MainThread: Logged in.
+2015-09-16 00:41:09,328: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:46:14,181: INFO: MainThread: Logging in.
+2015-09-16 00:46:19,457: INFO: MainThread: Logged in.
+2015-09-16 00:46:19,459: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:46:45,035: INFO: message_sender: Now serving customer 1, ('send', 89, ":3961640 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:46:55,184: INFO: MainThread: Logging in.
+2015-09-16 00:47:01,623: INFO: MainThread: Logged in.
+2015-09-16 00:47:01,624: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:47:27,157: INFO: message_sender: Now serving customer 1, ('send', 89, ":3961656 I haven't seen reports from @Smokey yet -- Hold on!")
+2015-09-16 00:48:25,428: INFO: MainThread: Logging in.
+2015-09-16 00:48:30,585: INFO: MainThread: Logged in.
+2015-09-16 00:48:30,586: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:49:52,406: INFO: MainThread: Logging in.
+2015-09-16 00:49:57,438: INFO: MainThread: Logged in.
+2015-09-16 00:49:57,439: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:50:57,885: INFO: MainThread: Logging in.
+2015-09-16 00:51:02,747: INFO: MainThread: Logged in.
+2015-09-16 00:51:02,749: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:51:27,618: INFO: MainThread: Logging in.
+2015-09-16 00:51:33,013: INFO: MainThread: Logged in.
+2015-09-16 00:51:33,023: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:52:32,555: INFO: MainThread: Logging in.
+2015-09-16 00:52:37,335: INFO: MainThread: Logged in.
+2015-09-16 00:52:37,337: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 00:52:57,458: INFO: MainThread: Logging in.
+2015-09-16 00:53:02,352: INFO: MainThread: Logged in.
+2015-09-16 00:53:02,353: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:02:34,164: INFO: MainThread: Logging in.
+2015-09-16 01:02:39,080: INFO: MainThread: Logged in.
+2015-09-16 01:02:39,082: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:04:50,826: INFO: MainThread: Logging in.
+2015-09-16 01:04:55,785: INFO: MainThread: Logged in.
+2015-09-16 01:04:55,791: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:05:24,536: INFO: message_sender: Now serving customer 1, ('send', 89, u':3961973 Smokey Report:\n Reason: Manually reported question\nSite: questions\nUser: 15006\nLink: [Wat duzz it dddddooooooooooo](http://questions.com13604/Engineer')
+2015-09-16 01:05:47,902: INFO: MainThread: Logging in.
+2015-09-16 01:05:52,255: INFO: MainThread: Logged in.
+2015-09-16 01:05:52,257: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:06:02,860: INFO: message_sender: Now serving customer 1, ('send', 89, u':3961983 Smokey Report:\n Reason: Manually reported question\nSite: questions\nUser: 15006\nLink: [Wat duzz it dddddooooooooooo](http://questions.com13604/Engineer)')
+2015-09-16 01:08:09,408: INFO: MainThread: Logging in.
+2015-09-16 01:08:13,850: INFO: MainThread: Logged in.
+2015-09-16 01:08:13,852: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:08:34,987: INFO: message_sender: Now serving customer 1, ('send', 89, u':3962007 Smokey Report:\n Reason: Manually reported question\nSite: patents.stackexchange.com\nUser: Engineer\nLink: [Wat duzz it dddddooooooooooo](http://patents.stackexchange.com.comquestions/15006)')
+2015-09-16 01:12:45,644: INFO: MainThread: Logging in.
+2015-09-16 01:12:50,683: INFO: MainThread: Logged in.
+2015-09-16 01:12:50,685: INFO: message_sender: Worker thread reporting for duty.
+2015-09-16 01:13:08,100: INFO: message_sender: Now serving customer 1, ('send', 89, u':3962068 Smokey Report:\nTitle: jquery: Disable/Enable button not working after reset\nReason: Manually reported answer\nSite: stackoverflow.com\nUser: ricardo iorio ([ricardo iorio](http://stackoverflow.com/users/5339036)\nLink: http://stackoverflow.com.coma/5339036')

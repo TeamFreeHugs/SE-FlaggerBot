@@ -1,0 +1,91 @@
+#!/usr/bin/env python
+
+import getpass
+import logging
+import logging.handlers
+import os
+import re
+import chatexchange.client
+import chatexchange.events
+
+logger = logging.getLogger(__name__)
+
+
+def main():
+    setup_logging()
+    host_id = "meta.stackexchange.com"
+
+    if 'ChatExchangeU' in os.environ:
+        email = os.environ['ChatExchangeU']
+    else:
+        email = raw_input("Email: ")
+    if 'ChatExchangeP' in os.environ:
+        password = os.environ['ChatExchangeP']
+    else:
+        password = getpass.getpass("Password: ")
+
+    client = chatexchange.client.Client(host_id)
+    client.login(email, password)
+
+    global tavern
+    tavern = client.get_room(89)
+    tavern.join()
+    tavern.watch(on_message_tavern)
+
+    while True:
+        message = raw_input("<< ")
+        tavern.send_message(message)
+
+
+regex = re.compile(
+    "\\[ \\[SmokeDetector\\]\\(https://github\\.com/Charcoal-SE/SmokeDetector\\) \\] " +
+    "(.+): \\[(.+)\\]\\(//([\\w\\.]+).com/(questions|answers|q|a)/(\\d+)\\) by \\[(.+)\\]\\" +
+    "(//[\\w.]+/users/\\d+/\\w+\\) on `.+`")
+
+
+def on_message_tavern(message, client):
+    if not isinstance(message, chatexchange.events.MessagePosted):
+        logger.debug("event: %r", message)
+        return
+
+    parts = []
+    last_smokey = ""
+    if message.user.id == 266345:
+        parts = regex.split(message.content)
+        if len(parts) != 8:
+            return
+        last_smokey = message.content
+    if message.content == "sd tpu":
+        global tavern
+        print("Last smokey report: " + last_smokey)
+        site = parts[3]
+        user = parts[6]
+        title = parts[2]
+        reason = parts[1]
+        report_type = parts[4]
+        post_id = parts[5]
+        tavern.send_message(
+            "Smokey Report:\n Reason: " + reason + "\nSite: " + site +
+            "\nUser: " + user + "\nLink: [" + title + "](http://" +
+            site + ".com" + report_type + "/" + post_id)
+
+
+def setup_logging():
+    logging.basicConfig(level=logging.INFO)
+    logger.setLevel(logging.DEBUG)
+
+    # In addition to the basic stderr logging configured globally
+    # above, we'll use a log file for chatexchange.client.
+    wrapper_logger = logging.getLogger('chatexchange.client')
+    wrapper_handler = logging.handlers.TimedRotatingFileHandler(
+        filename='client.log',
+        when='midnight', delay=True, utc=True, backupCount=7,
+    )
+    wrapper_handler.setFormatter(logging.Formatter(
+        "%(asctime)s: %(levelname)s: %(threadName)s: %(message)s"
+    ))
+    wrapper_logger.addHandler(wrapper_handler)
+
+
+if __name__ == '__main__':
+    main()
