@@ -54,7 +54,6 @@ def handle_message_sent(message, client):
             return
         print("Last smokey report: " + last_smokey)
         parts = regex.split(last_smokey)
-        print(len(parts))
         site = parts[7]
         user = parts[5]
         title = parts[2]
@@ -75,7 +74,6 @@ def handle_message_sent(message, client):
             owner = check.owner
             if isinstance(owner, chatexchange.users.User):
                 check_content_source = check.content_source.encode("utf-8")
-                print(len(regex.split(check_content_source)))
                 report_reply_details = re.compile(":\d+ (tp(?:u|\-|u\-)?|true)\w* +(\w+)?").split(sent_message_source)
                 if int(owner.id) == 266345 and \
                         len(report_reply_details) == 4 \
