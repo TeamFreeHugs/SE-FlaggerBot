@@ -27,7 +27,7 @@ def main():
     client = chatexchange.client.Client(host_id)
     client.login(email, password)
     global tavern
-    tavern = client.get_room(721    )
+    tavern = client.get_room(721)
     tavern.join()
     tavern.watch(on_message)
     while True:
@@ -35,11 +35,11 @@ def main():
         tavern.send_message(message)
 
 
-kill_types = ["@$1 was murdered", "@$1 had [Avada Kedavra](http://harrypotter.wikia.com/wiki/Killing_Curse)"
-                                  " used on him by Voldermort(aka Shadow Wizard)", "@$1 disappeared for no reason",
-              "@$1 played too much Minecraft and got eaten by a zombie", "@$1 slept with the fishes",
-              "@$1 has been entered into a Death Note", "@$1 was accidentally decapitated in an old factory",
-              "A noose appeared around @$1's neck and he tripped and fell off a cliff"]
+kill_types = ["$1 was murdered", "$1 had [Avada Kedavra](http://harrypotter.wikia.com/wiki/Killing_Curse)"
+                                 " used on him by Voldermort(aka Shadow Wizard)", "$1 disappeared for no reason",
+              "$1 played too much Minecraft and got eaten by a zombie", "$1 slept with the fishes",
+              "$1 has been entered into a Death Note", "$1 was accidentally decapitated in an old factory",
+              "A noose appeared around $1's neck and he tripped and fell off a cliff"]
 
 
 def on_message(message, client):
@@ -66,7 +66,8 @@ def on_message(message, client):
             if user_to_kill == message.message.owner.name.replace(" ", ""):
                 message.message.reply("ARE YOU MAD? TRYING TO KILL YOURSELF?")
             else:
-                kill_message = "_" + kill_types[random.randrange(0, len(kill_types))].replace("$1", user_to_kill) + "_"
+                kill_message = "_" + kill_types[random.randrange(0, len(kill_types))].replace("$1",
+                                                                                              "@" + user_to_kill) + "_"
                 message.message.reply(kill_message)
 
 
