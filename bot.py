@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python
 
 import os
 import random
@@ -18,7 +18,7 @@ def main():
     if 'ChatExchangeU' in os.environ:
         email = os.environ['ChatExchangeU']
     else:
-        email = input("Email: ")
+        email = raw_input("Email: ")
     if 'ChatExchangeP' in os.environ:
         password = os.environ['ChatExchangeP']
     else:
@@ -30,7 +30,7 @@ def main():
     tavern.join()
     tavern.watch(on_message)
     while True:
-        message = input("<< ")
+        message = raw_input("<< ")
         tavern.send_message(message)
 
 

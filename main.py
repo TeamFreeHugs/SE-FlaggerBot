@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import getpass
 import logging
@@ -20,7 +20,7 @@ def main():
     if 'ChatExchangeU' in os.environ:
         email = os.environ['ChatExchangeU']
     else:
-        email = input("Email: ")
+        email = raw_input("Email: ")
     if 'ChatExchangeP' in os.environ:
         password = os.environ['ChatExchangeP']
     else:
@@ -32,7 +32,7 @@ def main():
     tavern.join()
     tavern.watch(on_message)
     while True:
-        message = input("<< ")
+        message = raw_input("<< ")
         tavern.send_message(message)
 
 
@@ -43,12 +43,8 @@ regex = re.compile(
 
 last_smokey = ""
 
-
-def on_message(message, client):
+def handle_message_sent(message, client):
     global last_smokey
-    if not isinstance(message, chatexchange.events.MessagePosted):
-        print(message)
-        return
     sent_message_source = message.message.content_source.encode("utf-8")
     parts = regex.split(sent_message_source.strip())
     if sent_message_source == ">>lastsmokey":
@@ -102,6 +98,11 @@ def on_message(message, client):
     if message.user.id == 266345:
         if len(parts) == 9:
             last_smokey = sent_message_source
+
+
+def on_message(event, client):
+    if isinstance(event, chatexchange.events.MessagePosted):
+        handle_message_sent(event, client)
 
 
 def setup_logging():
