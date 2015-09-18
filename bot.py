@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import os
 import random
@@ -7,6 +7,7 @@ import chatexchange.client
 import chatexchange.events
 import chatexchange.messages
 import chatexchange.users
+import getpass
 
 words = ["happily", "sadly", "madly", "crazily", "like a mad dog"]
 
@@ -17,7 +18,7 @@ def main():
     if 'ChatExchangeU' in os.environ:
         email = os.environ['ChatExchangeU']
     else:
-        email = raw_input("Email: ")
+        email = input("Email: ")
     if 'ChatExchangeP' in os.environ:
         password = os.environ['ChatExchangeP']
     else:
@@ -29,7 +30,7 @@ def main():
     tavern.join()
     tavern.watch(on_message)
     while True:
-        message = raw_input("<< ")
+        message = input("<< ")
         tavern.send_message(message)
 
 
@@ -37,7 +38,8 @@ def on_message(message, client):
     if not isinstance(message, chatexchange.events.MessagePosted):
         return
     else:
-        regex = re.compile("!!/random (\d+) (\d+)").split(str(message.message.content_source))
+        two_num_regex = re.compile("!!/random (\d+) (\d+)").split(str(message.message.content_source))
+        kill_regex = re.compile("!!/random (\w+)").split(str(message.message.content_source))
         if message.message.content_source == "!!/lick":
             message.message.reply("_Licks floor " + words[random.randrange(0, len(words))] + "_")
         if message.message.content_source == "!!/facepalm":
@@ -46,8 +48,10 @@ def on_message(message, client):
             message.message.reply("_Passes coffee to @" + str(message.message.owner.name).replace(" ", "", 1000) + "_")
         if message.message.content_source == "!!/random":
             message.message.reply(random.random())
-        if str(message.message.content_source).startswith("!!/random ") and len(regex) == 4:
-            message.message.reply(random.randrange(int(regex[1]), int(regex[2])))
+        if message.message.content_source.startswith("!!/random ") and len(two_num_regex) == 4:
+            message.message.reply(random.randrange(int(two_num_regex[1]), int(two_num_regex[2])))
+        if message.message.content_source.startswith("!!/kill") and len(kill_regex) == 3:
+            message.message.reply("_" + message.message.owner.name + "_")
 
 
 main()

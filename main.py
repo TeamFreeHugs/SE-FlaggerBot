@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import getpass
 import logging
@@ -20,7 +20,7 @@ def main():
     if 'ChatExchangeU' in os.environ:
         email = os.environ['ChatExchangeU']
     else:
-        email = raw_input("Email: ")
+        email = input("Email: ")
     if 'ChatExchangeP' in os.environ:
         password = os.environ['ChatExchangeP']
     else:
@@ -32,7 +32,7 @@ def main():
     tavern.join()
     tavern.watch(on_message)
     while True:
-        message = raw_input("<< ")
+        message = input("<< ")
         tavern.send_message(message)
 
 
