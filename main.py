@@ -25,7 +25,6 @@ def main():
         password = os.environ['ChatExchangeP']
     else:
         password = getpass.getpass("Password: ")
-    global client
     client = chatexchange.client.Client(host_id)
     client.login(email, password)
     global tavern
@@ -45,15 +44,14 @@ regex = re.compile(
 last_smokey = ""
 
 
-def on_message(message, trash):
-    global client
+def on_message(message, client):
     global last_smokey
     if not isinstance(message, chatexchange.events.MessagePosted):
         print(message)
         return
-    parts = regex.split(message.message.content_source.strip())
-    print(message.message.content_source)
-    if message.message.content_source == ">>lastsmokey":
+    sent_message_source = message.message.content_source.encode("utf-8")
+    parts = regex.split(sent_message_source.strip())
+    if sent_message_source == ">>lastsmokey":
         global tavern
         if str(last_smokey).strip() == "":
             tavern.send_message(":" + str(message.message.id) + " I haven't seen reports from @Smokey yet -- Hold on!")
@@ -74,20 +72,36 @@ def on_message(message, trash):
                                 6] + ")\nLink: " + link + "\nReason:")
         tavern.send_message("sd why")
         return
-    if str(message.message.content_source).startswith(":"):
-        message_id = re.compile(":(\\d+) .+").split(message.message.content_source)[1]
-        print(message_id)
+    if str(sent_message_source).startswith(":"):
+        message_id = re.compile(":(\\d+) .+").split(sent_message_source)[1]
         check = client.get_message(int(message_id))
         if check is not None and isinstance(check, chatexchange.messages.Message):
             owner = check.owner
             if isinstance(owner, chatexchange.users.User):
-                print(owner.id)
-                if int(owner.id) == 266345:
-                    print("Smokey reply: " + check.content_source)
+                check_content_source = check.content_source.encode("utf-8")
+                print(len(regex.split(check_content_source)))
+                report_reply_details = re.compile(":\d+ (tp(?:u|\-|u\-)?|true)\w* +(\w+)?").split(sent_message_source)
+                if int(owner.id) == 266345 and \
+                        len(report_reply_details) == 4 \
+                        and len(regex.split(check_content_source)) == 9:
+                    parts = regex.split(check_content_source)
+                    site = parts[7]
+                    report_type = parts[3]
+                    post_id = parts[4]
+                    message.message.reply("Flagging " + ("question" if report_type.startswith("q") else "answer") +
+                                          " as " + report_reply_details[3])
+                    tp_reason = report_reply_details[3].lower()
+                    if tp_reason == "spam":
+                        tavern.send_message("`spam = spam`")
+                    elif tp_reason == "naa":
+                        tavern.send_message("`naa = not an answer`")
+                    elif tp_reason == "rude":
+                        tavern.send_message("`rude = rude`")
+
         return
     if message.user.id == 266345:
         if len(parts) == 9:
-            last_smokey = message.message.content_source
+            last_smokey = sent_message_source
 
 
 def setup_logging():
