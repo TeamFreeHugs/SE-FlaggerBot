@@ -7,7 +7,7 @@ import weakref
 
 
 def log_and_ignore_exceptions(
-    f, exceptions=Exception, logger=logging.getLogger('exceptions')
+    f, exceptions=Exception, logger=logng.getLogger('exceptions')
 ):
     """
     Wraps a function to catch its exceptions, log them, and return None.
