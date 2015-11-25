@@ -2,3 +2,5 @@
 *.*~
 __pycache__/
 client.log*
+login.json
+api_details.py
